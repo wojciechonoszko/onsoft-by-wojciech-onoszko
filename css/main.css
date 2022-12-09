@@ -91,12 +91,6 @@ img {
 }
 
 .header__logo-icon {
-  filter: grayscale(100%) sepia(100%);
-  color: red;
-  fill: purple;
-}
-
-.header__logo-ico {
   margin-left: 12px;
   margin-right: 12px;
   border: 2px dashed #2a2a2a;
@@ -200,5 +194,23 @@ img {
 .header__menu-item:nth-child(5):hover ~ #marker::before {
   background: silver;
   box-shadow: 0 0 15px silver, 0 0 30px silver, 0 0 45px silver, 0 0 60px silver;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+.icon {
+  margin-left: 12px;
+  margin-right: 12px;
+  border: 2px dashed #2a2a2a;
+  border-radius: 8px;
+  fill: #2a2a2a;
+}
+
+.icon:hover {
+  fill: #03a9f4;
 }
 /*# sourceMappingURL=main.css.map */
