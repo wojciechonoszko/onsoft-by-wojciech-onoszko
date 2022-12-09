@@ -1,5 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+.header__logo-container{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 10vh;
+  // text-indent: -9999px;
+  width: 40vh;
+  height: 20vh;
+  background: #d8afaf;
+  // background-size: 100px 82px;
+}
+
+
+ .header__logo-icon {
+  filter: grayscale(100%) sepia(100%);
+  color:red;
+  fill: purple;
+  
+}
+.header__logo-ico {
+  margin-left: 12px;
+  margin-right: 12px;
+  border: 2px dashed #2a2a2a;
+  border-radius: 8px;
+  fill: #2a2a2a;
+}
+
 .header__menu-container {
   display: flex;
   justify-content: center;
@@ -23,7 +51,7 @@
   display: inline-block;
   padding: 10px 20px;
   font-weight: 500;
-  background: rgb(217, 101, 101, 0.2);
+  background: rgba(212, 94, 94, 0.2);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(96, 91, 91, 0.1);
