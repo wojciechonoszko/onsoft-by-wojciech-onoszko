@@ -1,7 +1,11 @@
-<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<defs>
-<symbol id="onsoft2" viewBox="0 0 43 32">
-<path id="Zaznaczenie #1"
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+              "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="13.6199in" height="7.6612in"
+     viewBox="0 0 1280 720">
+  <path id="Zaznaczenie #1"
         fill="none" stroke="black" stroke-width="1"
         d="M 536.00,378.00
            C 533.55,378.00 530.28,378.13 528.00,377.26
@@ -116,8 +120,4 @@
              217.00,395.00 245.00,395.00 245.00,395.00
              245.00,395.00 245.00,325.00 245.00,325.00
              245.00,325.00 217.00,325.00 217.00,325.00 Z" />
-
-
-</symbol>
-</defs>
 </svg>
