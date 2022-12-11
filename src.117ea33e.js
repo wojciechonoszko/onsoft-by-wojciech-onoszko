@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/onsoft-by-wojciech-onoszko/src.e86c8a27.js.map
+//# sourceMappingURL=/onsoft-by-wojciech-onoszko/src.117ea33e.js.map
