@@ -2,10 +2,11 @@
   <h1 class="header__title">This is ONsoft by Wojciech Onoszko website!</h1>
   <div class="header__menu-container">
     <div class="header__logo-container">
-        <svg class="header__logo-icon">
-          <use href="#onsoft"></use>
-        </svg>
+      <div class="header__logo-icon">
+        <span class="header__logo-on">ON</span>
+        <!-- <span class="header__logo-soft"">soft</use> -->
       </div>
+    </div>
     <ul class="header__menu">
       <li class="header__menu-item"><a class="header__menu-link" href="#">Home</a></li>
       <li class="header__menu-item"><a class="header__menu-link" href="#">About</a></li>
@@ -31,8 +32,10 @@
         <text x="0" y="20" class="heavy">cat</text>
       </symbol>
       <symbol id="onsoft" viewbox="0 0 60 60">
-        <text x="0" y="35" class="header__logo-on">ON</text>
-        <text x="27" y="35" class="header__logo-soft">soft</text>
+        <text x="0" y="35">ON</text>
+      </symbol>
+      <symbol id="onsoft2" viewbox="0 0 60 60">
+        <text x="27" y="35">soft</text>
       </symbol>
     </defs>
   </svg>
@@ -43,6 +46,7 @@
     </svg>
     <svg class="icon" width="150" height="150">
       <use href="#onsoft"></use>
+      <use href="#onsoft2"></use>
     </svg>
   </div>
 </section>
