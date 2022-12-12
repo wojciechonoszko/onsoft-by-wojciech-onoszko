@@ -58,20 +58,25 @@ img {
   position: absolute;
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 5vh;
-  color: red;
+  color: #ffad16;
+  text-shadow: 2px 2px 4px #ffad16;
   display: flex;
   justify-content: center;
   align-items: center;
   left: 5vh;
   width: 30vh;
   height: 18vh;
-  background: #995691;
+  background-image: linear-gradient(to right, #020024 0%, #090979 35%, #00d4ff 100%);
   border-radius: 30px;
+  transition-property: background-image, text-shadow, color, transform;
+  transition-timing-function: linear;
+  transition-duration: 600ms;
 }
 
 .header__logo-container:hover {
-  color: green;
-  transition-duration: 2s;
+  background-image: linear-gradient(to right, #00d4ff 0%, #090979 65%, #020024 100%);
+  color: #15d315;
+  text-shadow: 2px 2px 4px #15d315;
 }
 
 .header__logo-on {
@@ -85,7 +90,12 @@ img {
   position: absolute;
   left: 15vh;
   display: inline-block;
-  color: green;
+  transition-delay: 300ms;
+  transition-property: text-shadow, color, transform;
+  transition-timing-function: linear;
+  transition-duration: 600ms;
+  color: #15d315;
+  text-shadow: 2px 2px 4px #15d315;
 }
 
 .header__logo-container:hover::after {
@@ -93,8 +103,9 @@ img {
   position: absolute;
   left: 15vh;
   display: inline-block;
-  color: red;
-  transition-duration: 2s;
+  transform: rotate(360deg);
+  text-shadow: 2px 2px 4px #ffad16;
+  color: #ffad16;
 }
 
 .header__menu-container {
@@ -102,7 +113,8 @@ img {
   justify-content: center;
   align-items: center;
   min-height: 20vh;
-  background: #6e186e;
+  background: #020024;
+  background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
 }
 
 .header__menu {
