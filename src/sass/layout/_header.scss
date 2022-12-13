@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap');
 
-
 .header__title {
-  width: 900px;
+  width: 80vw;
   color: #0d065f;
-  font-size: 4vh;
+  font-size: 2vw;
   font-weight: 700;
   transform: translate(-50%, -50%);
   transition-duration: 2000ms;
@@ -15,7 +14,6 @@
 @keyframes textSliding {
   0% {
     transform: translateX(5vw);
-    // transform: translateX(10px);
   }
 
   50% {
@@ -24,7 +22,6 @@
 
   100% {
     transform: translateX(5vw);
-
   }
 }
 
@@ -167,54 +164,151 @@
   border-radius: 50%;
   z-index: 1;
   transition: 0.5s;
-  background: cyan;
-  box-shadow: 0 0 15px cyan, 0 0 30px cyan, 0 0 45px cyan, 0 0 60px cyan;
 }
 
+.header__menu-item:nth-child(1):hover ~ #marker::before {
+  background: $hover-menu-item-color1;
+  box-shadow: 0 0 15px $hover-menu-item-color1, 0 0 30px $hover-menu-item-color1,
+    0 0 45px $hover-menu-item-color1, 0 0 60px $hover-menu-item-color1;
+}
 .header__menu-item:nth-child(2):hover ~ #marker::before {
-  background: red;
-  box-shadow: 0 0 15px red, 0 0 30px red, 0 0 45px red, 0 0 60px red;
+  background: $hover-menu-item-color2;
+  box-shadow: 0 0 15px $hover-menu-item-color2, 0 0 30px $hover-menu-item-color2,
+    0 0 45px $hover-menu-item-color2, 0 0 60px $hover-menu-item-color2;
 }
 
 .header__menu-item:nth-child(3):hover ~ #marker::before {
-  background: yellow;
-  box-shadow: 0 0 15px yellow, 0 0 30px yellow, 0 0 45px yellow, 0 0 60px yellow;
+  background: $hover-menu-item-color3;
+  box-shadow: 0 0 15px $hover-menu-item-color3, 0 0 30px $hover-menu-item-color3,
+    0 0 45px $hover-menu-item-color3, 0 0 60px $hover-menu-item-color3;
 }
 
 .header__menu-item:nth-child(4):hover ~ #marker::before {
-  background: green;
-  box-shadow: 0 0 15px green, 0 0 30px green, 0 0 45px green, 0 0 60px green;
+  background: $hover-menu-item-color4;
+  box-shadow: 0 0 15px $hover-menu-item-color4, 0 0 30px $hover-menu-item-color4,
+    0 0 45px $hover-menu-item-color4, 0 0 60px $hover-menu-item-color4;
 }
 
 .header__menu-item:nth-child(5):hover ~ #marker::before {
-  background: silver;
-  box-shadow: 0 0 15px silver, 0 0 30px silver, 0 0 45px silver, 0 0 60px silver;
+  background: $hover-menu-item-color5;
+  box-shadow: 0 0 15px $hover-menu-item-color5, 0 0 30px $hover-menu-item-color5,
+    0 0 45px $hover-menu-item-color5, 0 0 60px $hover-menu-item-color5;
 }
 
-
-@media screen and (max-width: 600px) {
-  .header__menu-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
+.hamburger {
+  display: none;
+  cursor: pointer;
 }
 
-.header__menu {
-  position: absolute;
-  right: 20vw;
-  top: 11vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
+.bar {
+  display: block;
+  content: '';
+  width: 25px;
+  height: 5px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: white;
+  border: 1px solid black;
 }
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    border-radius: 5px;
+    &:hover,
+    &:focus {
+      background: rgba(26, 6, 116, 0.3);
+      -webkit-box-shadow: 3px 3px 35px 9px rgba(151, 163, 243, 1);
+      -moz-box-shadow: 3px 3px 35px 9px rgba(151, 163, 243, 1);
+      box-shadow: 3px 3px 35px 9px rgba(151, 163, 243, 1);
+    }
+    animation: animate125 3000ms infinite 1000ms;
+  }
+
+  @keyframes animate125 {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.5);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(6px) rotate(405deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-6px) rotate(-405deg);
+  }
+
+  .header__menu {
+    position: fixed;
+    left: 100%;
+    top: 21vh;
+    gap: 0;
+    flex-direction: column;
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    align-items: center;
+    transition: 0.3s;
+    width: 100%;
+  }
+
+  .header__menu-item {
+    margin: 16px 0;
+  }
+
+  .header__menu.active {
+    left: 0;
+  }
+}
+
+.header__menu-container {
+  width: 100%;
+  display: inline-block;
+}
+#marker::before {
+  display: none;
+}
+.header__menu-item:nth-child(1) .header__menu-link:focus {
+  background: $hover-menu-item-color1;
+  box-shadow: 0 0 15px $hover-menu-item-color1, 0 0 30px $hover-menu-item-color1,
+    0 0 45px $hover-menu-item-color1, 0 0 60px $hover-menu-item-color1;
+}
+.header__menu-item:nth-child(2) .header__menu-link:focus {
+  background: $hover-menu-item-color2;
+  box-shadow: 0 0 15px $hover-menu-item-color2, 0 0 30px $hover-menu-item-color2,
+    0 0 45px $hover-menu-item-color2, 0 0 60px $hover-menu-item-color2;
+}
+.header__menu-item:nth-child(3) .header__menu-link:focus {
+  background: $hover-menu-item-color3;
+  box-shadow: 0 0 15px $hover-menu-item-color3, 0 0 30px $hover-menu-item-color3,
+    0 0 45px $hover-menu-item-color3, 0 0 60px $hover-menu-item-color3;
+}
+.header__menu-item:nth-child(4) .header__menu-link:focus {
+  background: $hover-menu-item-color4;
+  box-shadow: 0 0 15px $hover-menu-item-color4, 0 0 30px $hover-menu-item-color4,
+    0 0 45px $hover-menu-item-color4, 0 0 60px $hover-menu-item-color4;
+}
+.header__menu-item:nth-child(5) .header__menu-link:focus {
+  background: $hover-menu-item-color5;
+  box-shadow: 0 0 15px $hover-menu-item-color5, 0 0 30px $hover-menu-item-color5,
+    0 0 45px $hover-menu-item-color5, 0 0 60px $hover-menu-item-color5;
 }
