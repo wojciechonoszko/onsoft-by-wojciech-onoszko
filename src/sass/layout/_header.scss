@@ -267,7 +267,7 @@
       rgba(0, 212, 255, 1) 100%
     );
     align-items: center;
-    transition: 0.3s;
+    transition: 2s;
     width: 100%;
   }
 
@@ -278,37 +278,37 @@
   .header__menu.active {
     left: 0;
   }
-}
 
-.header__menu-container {
-  width: 100%;
-  display: inline-block;
-}
-#marker::before {
-  display: none;
-}
-.header__menu-item:nth-child(1) .header__menu-link:focus {
-  background: $hover-menu-item-color1;
-  box-shadow: 0 0 15px $hover-menu-item-color1, 0 0 30px $hover-menu-item-color1,
-    0 0 45px $hover-menu-item-color1, 0 0 60px $hover-menu-item-color1;
-}
-.header__menu-item:nth-child(2) .header__menu-link:focus {
-  background: $hover-menu-item-color2;
-  box-shadow: 0 0 15px $hover-menu-item-color2, 0 0 30px $hover-menu-item-color2,
-    0 0 45px $hover-menu-item-color2, 0 0 60px $hover-menu-item-color2;
-}
-.header__menu-item:nth-child(3) .header__menu-link:focus {
-  background: $hover-menu-item-color3;
-  box-shadow: 0 0 15px $hover-menu-item-color3, 0 0 30px $hover-menu-item-color3,
-    0 0 45px $hover-menu-item-color3, 0 0 60px $hover-menu-item-color3;
-}
-.header__menu-item:nth-child(4) .header__menu-link:focus {
-  background: $hover-menu-item-color4;
-  box-shadow: 0 0 15px $hover-menu-item-color4, 0 0 30px $hover-menu-item-color4,
-    0 0 45px $hover-menu-item-color4, 0 0 60px $hover-menu-item-color4;
-}
-.header__menu-item:nth-child(5) .header__menu-link:focus {
-  background: $hover-menu-item-color5;
-  box-shadow: 0 0 15px $hover-menu-item-color5, 0 0 30px $hover-menu-item-color5,
-    0 0 45px $hover-menu-item-color5, 0 0 60px $hover-menu-item-color5;
+  .header__menu-container {
+    width: 100%;
+    display: inline-block;
+  }
+  #marker::before {
+    display: none;
+  }
+  .header__menu-item:nth-child(1) .header__menu-link:focus {
+    background: $hover-menu-item-color1;
+    box-shadow: 0 0 15px $hover-menu-item-color1, 0 0 30px $hover-menu-item-color1,
+      0 0 45px $hover-menu-item-color1, 0 0 60px $hover-menu-item-color1;
+  }
+  .header__menu-item:nth-child(2) .header__menu-link:focus {
+    background: $hover-menu-item-color2;
+    box-shadow: 0 0 15px $hover-menu-item-color2, 0 0 30px $hover-menu-item-color2,
+      0 0 45px $hover-menu-item-color2, 0 0 60px $hover-menu-item-color2;
+  }
+  .header__menu-item:nth-child(3) .header__menu-link:focus {
+    background: $hover-menu-item-color3;
+    box-shadow: 0 0 15px $hover-menu-item-color3, 0 0 30px $hover-menu-item-color3,
+      0 0 45px $hover-menu-item-color3, 0 0 60px $hover-menu-item-color3;
+  }
+  .header__menu-item:nth-child(4) .header__menu-link:focus {
+    background: $hover-menu-item-color4;
+    box-shadow: 0 0 15px $hover-menu-item-color4, 0 0 30px $hover-menu-item-color4,
+      0 0 45px $hover-menu-item-color4, 0 0 60px $hover-menu-item-color4;
+  }
+  .header__menu-item:nth-child(5) .header__menu-link:focus {
+    background: $hover-menu-item-color5;
+    box-shadow: 0 0 15px $hover-menu-item-color5, 0 0 30px $hover-menu-item-color5,
+      0 0 45px $hover-menu-item-color5, 0 0 60px $hover-menu-item-color5;
+  }
 }

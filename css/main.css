@@ -296,7 +296,7 @@ img {
     flex-direction: column;
     background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
     align-items: center;
-    transition: 0.3s;
+    transition: 2s;
     width: 100%;
   }
   .header__menu-item {
@@ -305,39 +305,32 @@ img {
   .header__menu.active {
     left: 0;
   }
-}
-
-.header__menu-container {
-  width: 100%;
-  display: inline-block;
-}
-
-#marker::before {
-  display: none;
-}
-
-.header__menu-item:nth-child(1) .header__menu-link:focus {
-  background: #d92a2a;
-  box-shadow: 0 0 15px #d92a2a, 0 0 30px #d92a2a, 0 0 45px #d92a2a, 0 0 60px #d92a2a;
-}
-
-.header__menu-item:nth-child(2) .header__menu-link:focus {
-  background: #e7e721;
-  box-shadow: 0 0 15px #e7e721, 0 0 30px #e7e721, 0 0 45px #e7e721, 0 0 60px #e7e721;
-}
-
-.header__menu-item:nth-child(3) .header__menu-link:focus {
-  background: #12aa12;
-  box-shadow: 0 0 15px #12aa12, 0 0 30px #12aa12, 0 0 45px #12aa12, 0 0 60px #12aa12;
-}
-
-.header__menu-item:nth-child(4) .header__menu-link:focus {
-  background: #c0c0c0;
-  box-shadow: 0 0 15px #c0c0c0, 0 0 30px #c0c0c0, 0 0 45px #c0c0c0, 0 0 60px #c0c0c0;
-}
-
-.header__menu-item:nth-child(5) .header__menu-link:focus {
-  background: #47ebeb;
-  box-shadow: 0 0 15px #47ebeb, 0 0 30px #47ebeb, 0 0 45px #47ebeb, 0 0 60px #47ebeb;
+  .header__menu-container {
+    width: 100%;
+    display: inline-block;
+  }
+  #marker::before {
+    display: none;
+  }
+  .header__menu-item:nth-child(1) .header__menu-link:focus {
+    background: #d92a2a;
+    box-shadow: 0 0 15px #d92a2a, 0 0 30px #d92a2a, 0 0 45px #d92a2a, 0 0 60px #d92a2a;
+  }
+  .header__menu-item:nth-child(2) .header__menu-link:focus {
+    background: #e7e721;
+    box-shadow: 0 0 15px #e7e721, 0 0 30px #e7e721, 0 0 45px #e7e721, 0 0 60px #e7e721;
+  }
+  .header__menu-item:nth-child(3) .header__menu-link:focus {
+    background: #12aa12;
+    box-shadow: 0 0 15px #12aa12, 0 0 30px #12aa12, 0 0 45px #12aa12, 0 0 60px #12aa12;
+  }
+  .header__menu-item:nth-child(4) .header__menu-link:focus {
+    background: #c0c0c0;
+    box-shadow: 0 0 15px #c0c0c0, 0 0 30px #c0c0c0, 0 0 45px #c0c0c0, 0 0 60px #c0c0c0;
+  }
+  .header__menu-item:nth-child(5) .header__menu-link:focus {
+    background: #47ebeb;
+    box-shadow: 0 0 15px #47ebeb, 0 0 30px #47ebeb, 0 0 45px #47ebeb, 0 0 60px #47ebeb;
+  }
 }
 /*# sourceMappingURL=main.css.map */
