@@ -10,17 +10,25 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
+     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <!-- <link rel="stylesheet" href="../css/main.min.css"> -->
   </head>
   <body>
     <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
 
     <include src="./partials/header.html"></include>
+    <include src="./partials/portfolioSlider.html"></include>
     <!-- <include src="./partials/example.html"></include> -->
 
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
     <script src="./index.js"></script>
     <script src="./menuScript.js"></script>
     <script src="./hamburgerMenu.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./swiperSlider.js"></script>
   </body>
 </html>
