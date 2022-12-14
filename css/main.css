@@ -252,7 +252,28 @@ img {
   border: 1px solid black;
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header__menu-container {
+    justify-content: flex-end;
+  }
+  .header__menu {
+    right: 12vw;
+  }
+  .header__menu-item .header__menu-link {
+    border-radius: 0;
+    margin-right: 0;
+  }
+  .header__menu-item:last-child .header__menu-link {
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  .header__menu-item:first-child .header__menu-link {
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .hamburger {
     display: block;
     position: absolute;
@@ -291,7 +312,7 @@ img {
   .header__menu {
     position: fixed;
     left: 100%;
-    top: 21vh;
+    top: 21.5vh;
     gap: 0;
     flex-direction: column;
     background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
