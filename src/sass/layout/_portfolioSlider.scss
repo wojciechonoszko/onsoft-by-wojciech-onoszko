@@ -2,7 +2,6 @@
   background: #1fe7f5;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
-  color: black;
   margin: 0;
   padding: 0;
   display: flex;
@@ -11,16 +10,16 @@
   min-height: 60vh;
 }
 
-
-
 .swiper-container {
   width: 100vw;
   padding-top: 50px;
   padding-bottom: 200px;
-  background: #1fe7f5;
+  background: #3f3fd2;
 }
 
 .swiper-slide {
+  display: flex;
+  justify-content: center;
   background-position: center;
   background-size: cover;
   width: 300px;
@@ -29,18 +28,21 @@
 }
 
 .swiper-slide img {
-  display: block;
   height: 100%;
   -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0006);
-
 }
 
-.text{
-    position: relative;
-    display:block;
-    text-align: center;
-    bottom: 85%;
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
+a {
+  text-decoration: none;
+}
+
+.swiper-slide__text {
+  position: relative;
+  display: block;
+  text-align: center;
+  bottom: 95%;
+  color: rgba(229, 184, 184, 0.7);
+  font-size: 20px;
+  font-weight: 800;
+  text-shadow: 0 0 3px #35a6b8, 0 0 5px #0000ff;
 }
