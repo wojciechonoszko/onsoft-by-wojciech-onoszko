@@ -1,6 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap');
 
+.content {
+  padding: 0px;
+}
+
+.sticky {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding: 0px;
+}
+
 .header__title {
   width: 80vw;
   color: #0d065f;
@@ -215,30 +233,29 @@
 // ==================Tablet Styles=====================
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    &__menu-container {
+      justify-content: flex-end;
+    }
 
-.header{
-  &__menu-container {
-    justify-content: flex-end;
+    &__menu {
+      right: 12vw;
+    }
+
+    &__menu-item &__menu-link {
+      border-radius: 0;
+      margin-right: 0;
+    }
+
+    &__menu-item:last-child &__menu-link {
+      border-bottom-right-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+    &__menu-item:first-child &__menu-link {
+      border-bottom-left-radius: 30px;
+      border-top-left-radius: 30px;
+    }
   }
-
-  &__menu {
-  right: 12vw;
-}
-  
-  &__menu-item &__menu-link {
-  border-radius: 0;
-  margin-right: 0;
-}
-  
-&__menu-item:last-child &__menu-link {
-  border-bottom-right-radius: 30px;
-  border-top-right-radius: 30px;
-}
-&__menu-item:first-child &__menu-link {
-  border-bottom-left-radius: 30px;
-  border-top-left-radius: 30px;
-}
-}
 }
 
 // ==============Mobile Styles==============================

@@ -58,6 +58,24 @@ img {
   margin: -1px;
 }
 
+.content {
+  padding: 0px;
+}
+
+.sticky {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding: 0px;
+}
+
 .header__title {
   width: 80vw;
   color: #0d065f;
@@ -359,8 +377,14 @@ img {
   }
 }
 
+.section-portfolio__title {
+  font-size: 30px;
+  color: #3f3fd2;
+  font-weight: 800;
+  text-align: center;
+}
+
 .portfolio {
-  background: #1fe7f5;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   margin: 0;
@@ -369,6 +393,7 @@ img {
   align-items: center;
   justify-content: center;
   min-height: 60vh;
+  width: 100vw;
 }
 
 .swiper-container {

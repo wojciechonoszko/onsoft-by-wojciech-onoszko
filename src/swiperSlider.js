@@ -10,11 +10,11 @@ var swiper = new Swiper('.swiper-container', {
     modifier: 1,
     slideShadows: true,
   },
-  loop: true,
-//   autoplay: {
-//     delay: 2500,
-//     disableOnInteraction: false,
-//   },
+  // loop: true,
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: '.swiper-pagination',
   },

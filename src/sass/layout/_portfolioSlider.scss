@@ -1,5 +1,13 @@
+.section-portfolio__title{
+  font-size: 30px;
+  color: #3f3fd2;
+  font-weight: 800;
+  text-align: center;
+
+}
+
 .portfolio {
-  background: #1fe7f5;
+  // background: #1fe7f5;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   margin: 0;
@@ -8,6 +16,7 @@
   align-items: center;
   justify-content: center;
   min-height: 60vh;
+  width: 100vw;
 }
 
 .swiper-container {
