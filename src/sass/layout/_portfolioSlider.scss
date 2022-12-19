@@ -109,13 +109,52 @@ a {
 // ==============Mobile Styles==============================
 
 @media screen and (max-width: 767px) {
+
+  .portfolio {
+    height: 20vh;
+  }
+
   .swiper-slide {
-  width: 100px;
-  height: 100px;
+  // width: 100px;
+  height: 130px;
 }
 
 .swiper-slide__text {
   font-size: 15px;
   font-weight: 800;
+}
+
+.section-portfolio__title{
+  font-size: 30px;
+  color: #3f3fd2;
+  font-weight: 800;
+  text-align: center;
+
+}
+
+.portfolio {
+  // background: #1fe7f5;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  width: 100vw;
+}
+
+
+.swiper {
+  // position: absolute;
+  // padding: 0;
+  z-index: 0;
+  overflow: hidden;
+  // width: 100%;
+  height: 40vh;
+  padding-top: 25px;
+  padding-bottom: 200px;
+  background: #3f3fd2;
 }
 }
