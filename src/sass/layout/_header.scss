@@ -6,13 +6,12 @@
 }
 
 .sticky {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   position: fixed;
   z-index: 1;
   top: 0;
   width: 100%;
+
 }
 
 .sticky + .content {
