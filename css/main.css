@@ -528,4 +528,38 @@ a {
     background: #3f3fd2;
   }
 }
+
+.about-me {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+.about-me__showcase {
+  display: inline-block;
+  position: relative;
+  font-size: 1.3rem;
+  left: 15vw;
+  width: 500px;
+  text-align: justify;
+  text-justify: inter-word;
+  text-indent: 2rem;
+}
+
+.about-me__paragraph {
+  margin-bottom: 20px;
+}
+
+.about-me__headline {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.about-me__avatar {
+  position: absolute;
+  display: inline-block;
+  right: 15vw;
+  width: 25vw;
+}
 /*# sourceMappingURL=main.css.map */

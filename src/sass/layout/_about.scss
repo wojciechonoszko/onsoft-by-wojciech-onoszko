@@ -1,0 +1,33 @@
+.about-me {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+
+  &__showcase {
+    display: inline-block;
+    position: relative;
+    font-size: 1.3rem;
+    left: 15vw;
+    width: 500px;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 2rem;
+
+  }
+  &__paragraph {
+    margin-bottom: 20px;
+  }
+
+  &__headline {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  &__avatar {
+    position: absolute;
+    // z-index: 0;
+    display: inline-block;
+    right: 15vw;
+    width: 25vw;
+  }
+}
