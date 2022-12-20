@@ -2,6 +2,7 @@
 
 // Get the navbar
 const header = document.getElementById('header-menu');
+const headerContainer = document.getElementById('header-menu');
 
 // Get the offset position of the navbar
 const sticky = header.offsetTop;
@@ -10,8 +11,10 @@ const sticky = header.offsetTop;
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     header.classList.add('sticky');
+    headerContainer.classList.add('sticky-mobile-container')
   } else {
     header.classList.remove('sticky');
+    headerContainer.classList.remove('sticky-mobile-container')
   }
 }
 
