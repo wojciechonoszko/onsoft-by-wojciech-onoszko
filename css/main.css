@@ -23,6 +23,10 @@ section {
   margin-bottom: 50px;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3,
@@ -554,5 +558,44 @@ a {
   display: inline-block;
   right: 15vw;
   width: 25vw;
+}
+
+.footer {
+  width: 100%;
+  background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+}
+
+.footer__personal-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 15vw;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.footer__contact-address {
+  margin-top: 2vh;
+  font-size: 0.8em;
+}
+
+.footer__contact-email {
+  margin-top: 2vh;
+}
+
+.footer__contact-email__text {
+  color: #fff;
+  font-size: 1em;
+}
+
+.footer__contact-phone {
+  margin-top: 2vh;
+}
+
+.footer__contact-phone__text {
+  color: #fff;
+  font-size: 1em;
 }
 /*# sourceMappingURL=main.css.map */
