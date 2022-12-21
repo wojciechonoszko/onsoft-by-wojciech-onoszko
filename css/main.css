@@ -58,20 +58,15 @@ img {
   margin: -1px;
 }
 
-.content {
-  padding: 0px;
-}
-
 .sticky {
-  display: block;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   width: 100%;
 }
 
-.sticky + .content {
-  padding: 0px;
+.navbarOffsetMargin {
+  padding-top: 24vh;
 }
 
 .header__title {
@@ -396,14 +391,14 @@ img {
   color: #3f3fd2;
   font-weight: 800;
   text-align: center;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
 }
 
 .portfolio {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   margin: 0;
-  padding: 0;
+  padding-top: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -531,7 +526,6 @@ a {
 
 .about-me {
   margin: 0;
-  padding: 0;
   margin-bottom: 60px;
 }
 

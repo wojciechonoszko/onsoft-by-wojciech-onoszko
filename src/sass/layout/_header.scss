@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap');
 
-.content {
-  padding: 100px;
-}
+// .about-me {
+//   padding-top: 25vh;
+// }
 
 .sticky {
-  display: block;
+  // display: block;
   position: fixed;
   z-index: 2;
   top: 0;
@@ -14,9 +14,13 @@
 
 }
 
-.sticky + .content {
-  padding: 50px;
+.navbarOffsetMargin {
+  padding-top: 24vh;
 }
+
+// .sticky + .about-me {
+//   padding-top: 40vh;
+// }
 
 .header__title {
   display: inline-block;

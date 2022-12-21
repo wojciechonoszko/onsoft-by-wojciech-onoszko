@@ -3,6 +3,8 @@
 // Get the navbar
 const header = document.getElementById('header-menu');
 const headerContainer = document.getElementById('header-menu');
+let navbarMargin = document.getElementById('about-me');
+let portfolioMargin = document.getElementById('section-portfolio');
 
 // Get the offset position of the navbar
 const sticky = header.offsetTop;
@@ -12,9 +14,13 @@ function myFunction() {
   if (window.pageYOffset >= sticky) {
     header.classList.add('sticky');
     headerContainer.classList.add('sticky-mobile-container')
+    navbarMargin.classList.add('navbarOffsetMargin');
+    portfolioMargin.classList.add('navbarOffsetMargin');
   } else {
     header.classList.remove('sticky');
-    headerContainer.classList.remove('sticky-mobile-container')
+    headerContainer.classList.remove('sticky-mobile-container');
+    navbarMargin.classList.remove('navbarOffsetMargin');
+    portfolioMargin.classList.remove('navbarOffsetMargin');
   }
 }
 
