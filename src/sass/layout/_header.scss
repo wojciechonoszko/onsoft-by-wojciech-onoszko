@@ -309,6 +309,7 @@
   .header__menu {
     z-index: 1;
     position: fixed;
+    padding-top: 15vh;
     left: 100%;
     top: 20vh;
     gap: 0;
@@ -322,7 +323,7 @@
     align-items: center;
     transition: 2s;
     width: 100%;
-    overflow: auto;
+    max-height: 80vh;
     overflow-y: scroll;
   }
 
@@ -332,6 +333,7 @@
 
   .header__menu.active {
     left: 0;
+    
   }
 
   .header__logo-container {
