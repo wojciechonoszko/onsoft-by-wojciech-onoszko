@@ -59,13 +59,10 @@
   }
 }
 
-
-
-
 //===================Mobile Styles 500-767 px=====================
 
 @media (min-width: 500px) and (max-width: 767px) {
-.about-me {
+  .about-me {
     margin-bottom: 3vh;
 
     &__showcase {
@@ -79,7 +76,7 @@
       position: relative;
       width: 80vw;
       &__first {
-        margin-top: 50vh;
+        margin-top: 40vw;
       }
     }
 
@@ -87,7 +84,8 @@
       color: #0d065f;
       margin-bottom: 30px;
       font-size: 2rem;
-      text-align: center;
+      padding-left: 5vw;
+      padding-right: 5vw;
     }
     &__avatar {
       width: 36vw;
@@ -122,46 +120,40 @@
       position: relative;
       width: 80vw;
       &__first {
-        margin-top: 50vh;
+        margin-top: 80vw;
       }
     }
 
     &__headline {
-      color: #0d065f;
       margin-bottom: 30px;
-      font-size: 2rem;
+      font-size: 1.6rem;
       text-align: center;
+      padding-left: 5vw;
+      padding-right: 5vw;
     }
     &__avatar {
       width: 56vw;
-      // display: block;
       margin-right: auto;
       margin-left: auto;
       right: 20vw;
-      // top: vh;
       &__img {
-        // display: block;
         margin-right: auto;
         margin-left: auto;
       }
     }
   }
-  @media screen and (max-width: 360px){
+  @media screen and (max-width: 360px) {
     .about-me {
       &__avatar {
-      width: 76vw;
-      // display: block;
-      margin-right: auto;
-      margin-left: auto;
-      right: 12vw;
-      // top: vh;
-      &__img {
-        // display: block;
+        width: 76vw;
         margin-right: auto;
         margin-left: auto;
+        right: 12vw;
+        &__img {
+          margin-right: auto;
+          margin-left: auto;
+        }
       }
     }
-    }
   }
-
 }
