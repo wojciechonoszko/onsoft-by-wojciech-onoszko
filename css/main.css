@@ -27,6 +27,11 @@ a {
   text-decoration: none;
 }
 
+ul
+li {
+  list-style: none;
+}
+
 h1,
 h2,
 h3,
@@ -708,5 +713,10 @@ a {
 .footer__contact-phone__text {
   color: #fff;
   font-size: 1em;
+}
+
+.footer-social {
+  position: relative;
+  left: 50%;
 }
 /*# sourceMappingURL=main.css.map */
