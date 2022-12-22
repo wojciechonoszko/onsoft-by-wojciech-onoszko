@@ -4,19 +4,19 @@
   &__showcase {
     display: inline-block;
     position: relative;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     left: 15vw;
-    width: 500px;
+    width: 40vw;
     text-align: justify;
     text-justify: inter-word;
     text-indent: 2rem;
-
   }
   &__paragraph {
     margin-bottom: 20px;
   }
 
   &__headline {
+    color: #0d065f;
     margin-bottom: 30px;
     font-size: 2rem;
     text-align: center;
@@ -28,4 +28,140 @@
     right: 15vw;
     width: 25vw;
   }
+}
+
+// ==================Tablet Styles=====================
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .about-me {
+    margin-bottom: 3vh;
+
+    &__showcase {
+      font-size: 1rem;
+      left: 12vw;
+      width: 40vw;
+      text-indent: 1.5rem;
+    }
+    &__paragraph {
+      margin-bottom: 15px;
+    }
+
+    &__headline {
+      color: #0d065f;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      text-align: center;
+    }
+    &__avatar {
+      right: 12vw;
+      width: 30vw;
+    }
+  }
+}
+
+
+
+
+//===================Mobile Styles 500-767 px=====================
+
+@media (min-width: 500px) and (max-width: 767px) {
+.about-me {
+    margin-bottom: 3vh;
+
+    &__showcase {
+      font-size: 1rem;
+      left: 12vw;
+      width: 40vw;
+      text-indent: 1.5rem;
+    }
+    &__paragraph {
+      margin-bottom: 15px;
+      position: relative;
+      width: 80vw;
+      &__first {
+        margin-top: 50vh;
+      }
+    }
+
+    &__headline {
+      color: #0d065f;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      text-align: center;
+    }
+    &__avatar {
+      width: 36vw;
+      // display: block;
+      margin-right: auto;
+      margin-left: auto;
+      right: 30vw;
+      // top: vh;
+      &__img {
+        // display: block;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+// ==============Mobile Styles==============================
+
+@media screen and (max-width: 499px) {
+  .about-me {
+    margin-bottom: 3vh;
+
+    &__showcase {
+      font-size: 1rem;
+      left: 12vw;
+      width: 40vw;
+      text-indent: 1.5rem;
+    }
+    &__paragraph {
+      margin-bottom: 15px;
+      position: relative;
+      width: 80vw;
+      &__first {
+        margin-top: 50vh;
+      }
+    }
+
+    &__headline {
+      color: #0d065f;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      text-align: center;
+    }
+    &__avatar {
+      width: 56vw;
+      // display: block;
+      margin-right: auto;
+      margin-left: auto;
+      right: 20vw;
+      // top: vh;
+      &__img {
+        // display: block;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+  @media screen and (max-width: 360px){
+    .about-me {
+      &__avatar {
+      width: 76vw;
+      // display: block;
+      margin-right: auto;
+      margin-left: auto;
+      right: 12vw;
+      // top: vh;
+      &__img {
+        // display: block;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+    }
+  }
+
 }
