@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 /* The Modal (background) */
 .modal {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   display: block;
   /* Hidden by default */
   position: fixed;
@@ -24,7 +24,7 @@
 
 /* Modal Content/Box */
 .modal-content {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: transparent;
   backdrop-filter: saturate(180%) blur(8px);
   margin: 2% auto;
@@ -50,6 +50,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 1s;
 }
 
 .close:hover,
@@ -74,7 +75,7 @@
 }
 
 .intro_header {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   position: relative;
   margin: 0 auto;
   margin-bottom: 7vh;
@@ -85,7 +86,7 @@
 }
 
 .intro_header::after {
-  content: "\0020      \0020soft";
+  content: '\0020      \0020soft';
   white-space: pre;
   padding-left: 1.2%;
   position: absolute;
@@ -102,7 +103,7 @@
 }
 
 .intro_header::before {
-  content: "on";
+  content: 'on';
   position: absolute;
   top: 0;
   left: 0;
@@ -141,7 +142,7 @@
 }
 
 .quote {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0 auto;
   font-size: 3vw;
   color: #eadada;

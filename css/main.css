@@ -178,6 +178,7 @@ img {
 }
 
 .header__menu-link {
+  position: relative;
   color: #fff;
   text-decoration: none;
   display: inline-block;
@@ -187,7 +188,7 @@ img {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(96, 91, 91, 0.1);
-  z-index: 1000;
+  z-index: 2;
   overflow: hidden;
   backdrop-filter: blur(15px);
 }
@@ -732,6 +733,7 @@ a {
   width: 25vh;
   display: inline-block;
   fill: #090979;
+  transition: 1s;
 }
 
 .footer-social__icon:hover {
@@ -777,7 +779,7 @@ a {
 
 /* The Modal (background) */
 .modal {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   display: block;
   /* Hidden by default */
   position: fixed;
@@ -800,7 +802,7 @@ a {
 
 /* Modal Content/Box */
 .modal-content {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: transparent;
   backdrop-filter: saturate(180%) blur(8px);
   margin: 2% auto;
@@ -826,6 +828,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 1s;
 }
 
 .close:hover,
@@ -850,7 +853,7 @@ a {
 }
 
 .intro_header {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   position: relative;
   margin: 0 auto;
   margin-bottom: 7vh;
@@ -861,7 +864,7 @@ a {
 }
 
 .intro_header::after {
-  content: "\0020      \0020soft";
+  content: '\0020      \0020soft';
   white-space: pre;
   padding-left: 1.2%;
   position: absolute;
@@ -878,7 +881,7 @@ a {
 }
 
 .intro_header::before {
-  content: "on";
+  content: 'on';
   position: absolute;
   top: 0;
   left: 0;
@@ -917,7 +920,7 @@ a {
 }
 
 .quote {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0 auto;
   font-size: 3vw;
   color: #eadada;
