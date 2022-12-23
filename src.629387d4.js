@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/world.jpg":[["world.aac902a4.jpg","xtLK"],"xtLK"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/onsoft-by-wojciech-onoszko/src.2066c11b.js.map
+//# sourceMappingURL=/onsoft-by-wojciech-onoszko/src.629387d4.js.map
